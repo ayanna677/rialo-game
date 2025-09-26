@@ -1,0 +1,14 @@
+/* Sky */
+#sky { position: fixed; top:0; left:0; width:100vw; height:100vh; background: linear-gradient(to top,#87ceeb,#f0f8ff); overflow:hidden; z-index:0;}
+.cloud { position:absolute; background:rgba(255,255,255,0.8); border-radius:50%; filter:blur(5px); animation:moveCloud linear infinite; z-index:0;}
+@keyframes moveCloud {0%{transform:translateX(-250px);}100%{transform:translateX(110vw);}}
+.header { text-align:center; z-index:1; position:relative; }
+#logo { width:150px; margin-bottom:10px; }
+.score-timer { display:flex; justify-content:space-around; font-size:1.2em; margin:10px; z-index:1; position:relative;}
+#gameArea { position:relative; width:100%; height:70vh; overflow:hidden;}
+#timerBarContainer { width:80%; height:20px; background:#ddd; margin:10px auto;}
+#timerBar { width:100%; height:100%; background:green; transition: width 1s linear;}
+.balloon { position:absolute; width:50px; height:70px; border-radius:50%; cursor:pointer;}
+.balloon.red{ background:red; }
+.balloon.blue{ background:blue; }
+.balloon.green{ background:green; }
